@@ -21,14 +21,13 @@ class Program {
             processChoice();
         } while (!"4".equals(choice));
 
-        System.out.print("[SUCCESS] Programa finalizado.");
+        System.out.print("[SUCESSO] Programa finalizado.");
         STDIN.close();
 
     }
 
     private static void showMenu() {
-        System.out.println(" ");
-        System.out.println("--------------------------------");
+        System.out.println("\r\n--------------------------------");
         System.out.println("[1] Registrar as notas de um novo aluno");
         System.out.println("[2] Consultar boletim de um aluno.");
         System.out.println("[3] Consultar notas da turma.");
@@ -37,8 +36,7 @@ class Program {
     }
 
     private static void readChoice() {
-        System.out.println(" ");
-        System.out.print("Sua opcao: ");
+        System.out.print("\r\nSua opcao: ");
         choice = STDIN.next();
     }
 
