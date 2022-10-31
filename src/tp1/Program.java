@@ -151,7 +151,7 @@ class Program {
     private static String getResult(float average) {
         if (average < 4) {
             return "Reprovado";
-        } else if (average > 4 && average < 7) {
+        } else if (average >= 4 && average < 7) {
             return "Prova Final";
         } else {
             return "Aprovado";
